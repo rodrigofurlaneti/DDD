@@ -2,18 +2,15 @@
 
 <table style="width:100%">
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
+    <th>Tecnologia</th>
+    <th>Versão</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
+    <td>.NET Framework</td>
+    <td>4.5</td>
   </tr>
   <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+    <td>Entity Framework</td>
+    <td>6.1</td>
   </tr>
 </table>
