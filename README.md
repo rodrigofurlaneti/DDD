@@ -4,15 +4,29 @@
   <tr>
     <th>Tecnologia</th>
     <th>Versão</th>
+    <th>Camada</th>
   </tr>
   <tr>
     <td>.NET Framework</td>
     <td>4.5</td>
-  </tr>
+    <td>Todas</td>
+</tr>
   <tr>
     <td>Entity Framework</td>
     <td>6.1</td>
-  </tr>
+    <td>0 - Presentation e 4.1 - Infra.Data</td>
+</tr>
+  <tr>
+    <td>System.Data.SqlClient</td>
+    <td>4.1.1</td>
+    <td>0 - Presentation e 4.1 - Infra.Data</td>
+</tr>
+  <tr>
+    <td>AutoMapper</td>
+    <td>3.2.1</td>
+    <td>0 - Presentation</td>
+</tr>
+  
 </table>
 
 
@@ -42,5 +56,13 @@
     <tr>
     <td>4</td>
     <td>Infra</td>
+  </tr>
+  <tr>
+    <td>4.1</td>
+    <td>Infra.Cross</td>
+  </tr>
+    <tr>
+    <td>4.1</td>
+    <td>Infra.Data</td>
   </tr>
 </table>
