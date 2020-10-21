@@ -9,22 +9,22 @@
   <tr>
     <td>.NET Framework</td>
     <td VALIGN = Middle Align = Center>4.5</td>
-    <td>Todas</td>
+    <td VALIGN = Middle Align = Center>Todas</td>
 </tr>
   <tr>
     <td>Entity Framework</td>
-    <td>6.1</td>
-    <td>0 - Presentation e 4.1 - Infra.Data</td>
+    <td VALIGN = Middle Align = Center>6.1</td>
+    <td VALIGN = Middle Align = Center>0 - Presentation e 4.1 - Infra.Data</td>
 </tr>
   <tr>
     <td>System.Data.SqlClient</td>
-    <td>4.1.1</td>
-    <td>0 - Presentation e 4.1 - Infra.Data</td>
+    <td VALIGN = Middle Align = Center>4.1.1</td>
+    <td VALIGN = Middle Align = Center>0 - Presentation e 4.1 - Infra.Data</td>
 </tr>
   <tr>
     <td>AutoMapper</td>
-    <td>3.2.1</td>
-    <td>0 - Presentation</td>
+    <td VALIGN = Middle Align = Center>3.2.1</td>
+    <td VALIGN = Middle Align = Center>0 - Presentation</td>
 </tr>
   
 </table>
@@ -37,32 +37,32 @@
     <th>Nome</th>
   </tr>
   <tr>
-    <td>0</td>
-    <td>Presentation</td>
+    <td VALIGN = Middle Align = Center>0</td>
+    <td VALIGN = Middle Align = Center>Presentation</td>
   </tr>
   <tr>
-    <td>1</td>
-    <td>Services</td>
+    <td VALIGN = Middle Align = Center>1</td>
+    <td VALIGN = Middle Align = Center>Services</td>
   </tr>
   
   <tr>
-    <td>2</td>
-    <td>Application</td>
+    <td VALIGN = Middle Align = Center>2</td>
+    <td VALIGN = Middle Align = Center>Application</td>
   </tr>
     <tr>
-    <td>3</td>
-    <td>Domain</td>
+    <td VALIGN = Middle Align = Center>3</td>
+    <td VALIGN = Middle Align = Center>Domain</td>
   </tr>
     <tr>
-    <td>4</td>
-    <td>Infra</td>
+    <td VALIGN = Middle Align = Center>4</td>
+    <td VALIGN = Middle Align = Center>Infra</td>
   </tr>
   <tr>
-    <td>4.1</td>
-    <td>Infra.Cross</td>
+    <td VALIGN = Middle Align = Center>4.1</td>
+    <td VALIGN = Middle Align = Center>Infra.Cross</td>
   </tr>
     <tr>
-    <td>4.1</td>
-    <td>Infra.Data</td>
+    <td VALIGN = Middle Align = Center>4.1</td>
+    <td VALIGN = Middle Align = Center>Infra.Data</td>
   </tr>
 </table>
