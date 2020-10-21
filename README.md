@@ -59,7 +59,7 @@
   </tr>
   <tr>
     <td VALIGN = Middle Align = Center>4.1</td>
-    <td VALIGN = Middle Align = Center>Infra.4.1-CrossCutting</td>
+    <td VALIGN = Middle Align = Center>Infra.CrossCutting</td>
   </tr>
     <tr>
     <td VALIGN = Middle Align = Center>4.1</td>
