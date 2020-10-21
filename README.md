@@ -82,3 +82,52 @@
     <td VALIGN = Middle Align = Center>DDD.Infra.Data</td>
   </tr>
 </table>
+
+
+<table style="width:100%">
+  <caption>Camadas 0 Presentation</caption>
+  <tr>
+    <th>Ordem</th>
+    <th>Nome</th>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>0</td>
+    <td VALIGN = Middle Align = Center>DDD.MVC</td>
+  </tr>
+    <tr>
+    <td VALIGN = Middle Align = Center>1</td>
+    <td VALIGN = Middle Align = Center>App_Data</td>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>2</td>
+    <td VALIGN = Middle Align = Center>App_start</td>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>3</td>
+    <td VALIGN = Middle Align = Center>AutoMapper</td>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>4</td>
+    <td VALIGN = Middle Align = Center>Content</td>
+  </tr>
+    <tr>
+    <td VALIGN = Middle Align = Center>5</td>
+    <td VALIGN = Middle Align = Center>Controller</td>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>6</td>
+    <td VALIGN = Middle Align = Center>Fonts</td>
+  </tr>
+    <tr>
+    <td VALIGN = Middle Align = Center>7</td>
+    <td VALIGN = Middle Align = Center>Script</td>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>8</td>
+    <td VALIGN = Middle Align = Center>ViemModels</td>
+  </tr>
+    <tr>
+    <td VALIGN = Middle Align = Center>9</td>
+    <td VALIGN = Middle Align = Center>Views</td>
+  </tr>
+</table>
