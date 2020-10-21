@@ -100,7 +100,7 @@
   </tr>
   <tr>
     <td VALIGN = Middle Align = Center>2</td>
-    <td VALIGN = Middle Align = Center>App_start</td>
+    <td VALIGN = Middle Align = Center>App_Start</td>
   </tr>
   <tr>
     <td VALIGN = Middle Align = Center>3</td>
@@ -129,5 +129,58 @@
     <tr>
     <td VALIGN = Middle Align = Center>9</td>
     <td VALIGN = Middle Align = Center>Views</td>
+  </tr>
+</table>
+
+<table style="width:100%">
+  <caption>Camadas 3 Domain</caption>
+  <tr>
+    <th>Ordem</th>
+    <th>Nome</th>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>0</td>
+    <td VALIGN = Middle Align = Center>DDD.Domain</td>
+  </tr>
+    <tr>
+    <td VALIGN = Middle Align = Center>1</td>
+    <td VALIGN = Middle Align = Center>Entities</td>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>2</td>
+    <td VALIGN = Middle Align = Center>Interfaces</td>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>3</td>
+    <td VALIGN = Middle Align = Center>Services</td>
+  </tr>
+</table>
+
+<table style="width:100%">
+  <caption>Camadas 4.1 Infra.Data</caption>
+  <tr>
+    <th>Ordem</th>
+    <th>Nome</th>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>0</td>
+    <td VALIGN = Middle Align = Center>DDD.Infra.Data</td>
+  </tr>
+    <tr>
+    <td VALIGN = Middle Align = Center>1</td>
+    <td VALIGN = Middle Align = Center>Context</td>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>2</td>
+    <td VALIGN = Middle Align = Center>EntityConfig</td>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>3</td>
+    <td VALIGN = Middle Align = Center>Migrations</td>
+  </tr>
+  
+  <tr>
+    <td VALIGN = Middle Align = Center>4</td>
+    <td VALIGN = Middle Align = Center>Repositories</td>
   </tr>
 </table>
