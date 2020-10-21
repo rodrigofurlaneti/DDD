@@ -1,18 +1,19 @@
 namespace DDD.Infra.Data.Migrations
 {
+    using DDD.Infra.Data.Context;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DDD.Infra.Data.Context.Context>
+    internal sealed class Configuration : DbMigrationsConfiguration<ContextDDD>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(DDD.Infra.Data.Context.Context context)
+        protected override void Seed(ContextDDD context)
         {
             //  This method will be called after migrating to the latest version.
 

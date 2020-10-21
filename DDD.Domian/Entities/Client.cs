@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-
 namespace DDD.Domian.Entities
 {
     public class Client

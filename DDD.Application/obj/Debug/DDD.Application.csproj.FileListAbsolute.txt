@@ -1,0 +1,6 @@
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.Application\bin\Debug\DDD.Application.dll
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.Application\bin\Debug\DDD.Application.pdb
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.Application\obj\Debug\DDD.Application.csprojAssemblyReference.cache
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.Application\obj\Debug\DDD.Application.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.Application\obj\Debug\DDD.Application.dll
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.Application\obj\Debug\DDD.Application.pdb

@@ -1,3 +1,4 @@
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\AutoMapper.Net4.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\DDD.MVC.dll.config
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\DDD.MVC.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\DDD.MVC.pdb
@@ -51,6 +52,9 @@ C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\roslyn\vbc.rsp
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\roslyn\VBCSCompiler.exe
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\Antlr3.Runtime.dll
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\AutoMapper.dll
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\DDD.Domian.dll
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\DDD.Infra.Data.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\Newtonsoft.Json.dll
@@ -62,6 +66,11 @@ C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\System.Web.WebPages
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\System.Web.WebPages.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\System.Web.WebPages.Razor.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\WebGrease.dll
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\EntityFramework.dll
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\DDD.Domian.pdb
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\DDD.Infra.Data.pdb
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\DDD.Infra.Data.dll.config
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\AutoMapper.xml
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\System.Web.Helpers.xml
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\System.Web.Mvc.xml
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\System.Web.Optimization.xml
@@ -72,6 +81,7 @@ C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\System.Web.WebPages
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\Newtonsoft.Json.xml
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\Antlr3.Runtime.pdb
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\EntityFramework.xml
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\pt-br\System.Web.Helpers.resources.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\pt-br\System.Web.Mvc.resources.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\pt-br\System.Web.Optimization.resources.dll
@@ -84,3 +94,5 @@ C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\obj\Debug\DDD.MVC.cspro
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\obj\Debug\DDD.MVC.csproj.CopyComplete
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\obj\Debug\DDD.MVC.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\obj\Debug\DDD.MVC.pdb
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.MVC\bin\EntityFramework.SqlServer.xml

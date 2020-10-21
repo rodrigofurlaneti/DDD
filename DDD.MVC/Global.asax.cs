@@ -1,3 +1,4 @@
+using DDD.MVC.AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,9 @@ namespace DDD.MVC
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //Registrar o Automapper
+            AutoMapperConfig.RegisterMappings();
         }
     }
 }
