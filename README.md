@@ -8,7 +8,7 @@
   </tr>
   <tr>
     <td>.NET Framework</td>
-    <td style="text-aling: center;">4.5</td>
+    <td><p class="text-center">4.5</p></td>
     <td>Todas</td>
 </tr>
   <tr>
