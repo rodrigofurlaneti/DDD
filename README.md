@@ -40,6 +40,10 @@
     <td VALIGN = Middle Align = Center>0</td>
     <td VALIGN = Middle Align = Center>Presentation</td>
   </tr>
+    <tr>
+    <td VALIGN = Middle Align = Center>0</td>
+    <td VALIGN = Middle Align = Center>DDD.MVC</td>
+  </tr>
   <tr>
     <td VALIGN = Middle Align = Center>1</td>
     <td VALIGN = Middle Align = Center>Services</td>
@@ -49,9 +53,17 @@
     <td VALIGN = Middle Align = Center>2</td>
     <td VALIGN = Middle Align = Center>Application</td>
   </tr>
+      <tr>
+    <td VALIGN = Middle Align = Center>2</td>
+    <td VALIGN = Middle Align = Center>DDD.Application</td>
+  </tr>
     <tr>
     <td VALIGN = Middle Align = Center>3</td>
     <td VALIGN = Middle Align = Center>Domain</td>
+  </tr>
+  <tr>
+    <td VALIGN = Middle Align = Center>3</td>
+    <td VALIGN = Middle Align = Center>DDD.Domain</td>
   </tr>
     <tr>
     <td VALIGN = Middle Align = Center>4</td>
@@ -64,5 +76,9 @@
     <tr>
     <td VALIGN = Middle Align = Center>4.1</td>
     <td VALIGN = Middle Align = Center>Infra.Data</td>
+  </tr>
+      <tr>
+    <td VALIGN = Middle Align = Center>4.1</td>
+    <td VALIGN = Middle Align = Center>DDD.Infra.Data</td>
   </tr>
 </table>
