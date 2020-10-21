@@ -26,6 +26,11 @@
     <td VALIGN = Middle Align = Center>3.2.1</td>
     <td VALIGN = Middle Align = Center>0 - Presentation</td>
 </tr>
+<tr>
+    <td VALIGN = Middle Align = Center>Ninject.MVC5</td>
+    <td VALIGN = Middle Align = Center>3.2.0.0</td>
+    <td VALIGN = Middle Align = Center>0 - Presentation</td>
+</tr>
   
 </table>
 
