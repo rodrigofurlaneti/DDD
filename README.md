@@ -8,7 +8,7 @@
   </tr>
   <tr>
     <td>.NET Framework</td>
-    <td><p class="text-center">4.5</p></td>
+    <td VALIGN = Middle Align = Center>4.5</td>
     <td>Todas</td>
 </tr>
   <tr>
