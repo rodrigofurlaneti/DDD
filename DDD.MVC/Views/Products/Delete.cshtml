@@ -1,0 +1,48 @@
+﻿@model DDD.MVC.ViewModels.ProductViewModel
+
+@{
+    ViewBag.Title = "Apagar produto";
+}
+
+<h2>Apagar produto</h2>
+
+<h3>Tem certeza de que deseja excluir?</h3>
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Available)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Available)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Apagar" class="btn btn-sm btn-success" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

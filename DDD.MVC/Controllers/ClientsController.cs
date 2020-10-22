@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using DDD.Application.Interface;
 using DDD.Domian.Entities;
-using DDD.Infra.Data.Repositories;
 using DDD.MVC.ViewModels;
 using System.Collections.Generic;
 using System.Web.Mvc;
@@ -8,18 +8,23 @@ namespace DDD.MVC.Controllers
 {
     public class ClientsController : Controller
     {
-        private readonly ClientRepository _clientRepository = new ClientRepository();
+        private readonly IClientAppService _clientAppService;
+        public ClientsController(IClientAppService clientAppService)
+        {
+            _clientAppService = clientAppService;
+        }
         // GET: Clients
         public ActionResult Index()
         {
-            var clientViewModel = Mapper.Map<IEnumerable<Client>, IEnumerable<ClientViewModel>>(_clientRepository.GetAll());
+            var clientViewModel = Mapper.Map<IEnumerable<Client>, IEnumerable<ClientViewModel>>(_clientAppService.GetAll());
             return View(clientViewModel);
         }
-
         // GET: Clients/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var client = _clientAppService.GetById(id);
+            var clientViewModel = Mapper.Map<Client, ClientViewModel>(client);
+            return View(clientViewModel);
         }
 
         // GET: Clients/Create
@@ -27,7 +32,6 @@ namespace DDD.MVC.Controllers
         {
             return View();
         }
-
         // POST: Clients/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -36,7 +40,7 @@ namespace DDD.MVC.Controllers
             if (ModelState.IsValid)
             {
                 var clientDomain = Mapper.Map<ClientViewModel, Client>(client);
-                _clientRepository.Add(clientDomain);
+                _clientAppService.Add(clientDomain);
                 return RedirectToAction("Index");
             }
             return View(client);
@@ -45,45 +49,41 @@ namespace DDD.MVC.Controllers
         // GET: Clients/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var client = _clientAppService.GetById(id);
+            var clientViewModel = Mapper.Map<Client, ClientViewModel>(client);
+            return View(clientViewModel);
         }
 
         // POST: Clients/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(ClientViewModel client)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add update logic here
-
+                var clientDomain = Mapper.Map<ClientViewModel, Client>(client);
+                _clientAppService.Add(clientDomain);
                 return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(client);
         }
 
         // GET: Clients/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var client = _clientAppService.GetById(id);
+            var clientViewModel = Mapper.Map<Client, ClientViewModel>(client);
+            return View(clientViewModel);
         }
 
         // POST: Clients/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
         {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            var client = _clientAppService.GetById(id);
+            _clientAppService.Remove(client);
+            return RedirectToAction("Index");
         }
     }
 }

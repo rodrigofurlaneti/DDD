@@ -7,8 +7,8 @@ namespace DDD.Infra.Data.EntityConfig
         public ClientConfiguration()
         {
             HasKey(c => c.ClientId);
-            Property(c => c.Name).IsRequired().HasMaxLength(150);
-            Property(c => c.Email).IsRequired().HasMaxLength(80);
+            //Property(c => c.Name).IsRequired().HasMaxLength(150);
+            //Property(c => c.Email).IsRequired().HasMaxLength(80);
         }
     }
 }

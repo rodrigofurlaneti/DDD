@@ -1,7 +1,6 @@
 ﻿using DDD.Domian.Entities;
 using DDD.Infra.Data.EntityConfig;
 using System;
-using System.Data.SqlClient;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
@@ -13,7 +12,7 @@ namespace DDD.Infra.Data.Context
             : base ("dbConnection") { }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<Client_Product> Client_Product { get; set; }
+        public DbSet<ClientProduct> ClientProduct { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -32,7 +31,7 @@ namespace DDD.Infra.Data.Context
             //Chama a configuração da entidade para escrever o banco conforme orientado
             modelBuilder.Configurations.Add(new ClientConfiguration());
             modelBuilder.Configurations.Add(new ProductConfiguration());
-            modelBuilder.Configurations.Add(new Client_ProductConfiguration());
+            modelBuilder.Configurations.Add(new ClientProductConfiguration());
         }
 
         public override int SaveChanges()

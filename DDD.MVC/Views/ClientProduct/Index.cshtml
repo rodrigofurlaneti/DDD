@@ -1,0 +1,38 @@
+﻿@model IEnumerable<DDD.MVC.ViewModels.ClientProductViewModel>
+
+@{
+    ViewBag.Title = "Cliente produto";
+}
+
+<h2>Cliente produto</h2>
+
+<p>
+    @Html.ActionLink("Adicionar novo cliente produto", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Clients.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Products.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ClientProductId }) |
+            @Html.ActionLink("Detalhar", "Details", new { id=item.ClientProductId }) |
+            @Html.ActionLink("Apagar", "Delete", new { id=item.ClientProductId })
+        </td>
+    </tr>
+}
+</table>

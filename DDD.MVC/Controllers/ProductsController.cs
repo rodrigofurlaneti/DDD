@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using DDD.Application.Interface;
 using DDD.Domian.Entities;
-using DDD.Infra.Data.Repositories;
 using DDD.MVC.ViewModels;
 using System.Collections.Generic;
 using System.Web.Mvc;
@@ -8,18 +8,25 @@ namespace DDD.MVC.Controllers
 {
     public class ProductsController : Controller
     {
-        private readonly ProductRepository _productRepository = new ProductRepository();
+        private readonly IProductAppService _productAppService;
+        public ProductsController(IProductAppService productAppService)
+        {
+            _productAppService = productAppService;
+        }
+
         // GET: Product
         public ActionResult Index()
         {
-            var productViewModel = Mapper.Map<IEnumerable<Product>, IEnumerable<ProductViewModel>>(_productRepository.GetAll());
+            var productViewModel = Mapper.Map<IEnumerable<Product>, IEnumerable<ProductViewModel>>(_productAppService.GetAll());
             return View(productViewModel);
         }
 
         // GET: Product/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var product = _productAppService.GetById(id);
+            var productViewModel = Mapper.Map<Product, ProductViewModel>(product);
+            return View(productViewModel);
         }
 
         // GET: Product/Create
@@ -36,7 +43,7 @@ namespace DDD.MVC.Controllers
             if (ModelState.IsValid)
             {
                 var productDomain = Mapper.Map<ProductViewModel, Product>(product);
-                _productRepository.Add(productDomain);
+                _productAppService.Add(productDomain);
                 return RedirectToAction("Index");
             }
             return View(product);
@@ -45,45 +52,40 @@ namespace DDD.MVC.Controllers
         // GET: Product/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var product = _productAppService.GetById(id);
+            var productViewModel = Mapper.Map<Product, ProductViewModel>(product);
+            return View(productViewModel);
         }
 
         // POST: Product/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(ProductViewModel product)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add update logic here
-
+                var productDomain = Mapper.Map<ProductViewModel, Product>(product);
+                _productAppService.Add(productDomain);
                 return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(product);
         }
 
         // GET: Product/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var product = _productAppService.GetById(id);
+            var productViewModel = Mapper.Map<Product, ProductViewModel>(product);
+            return View(productViewModel);
         }
 
         // POST: Product/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id, FormCollection collection)
         {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            var product = _productAppService.GetById(id);
+            _productAppService.Remove(product);
+            return RedirectToAction("Index");
         }
     }
 }

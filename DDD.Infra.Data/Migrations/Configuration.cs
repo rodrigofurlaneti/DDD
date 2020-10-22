@@ -1,10 +1,7 @@
 namespace DDD.Infra.Data.Migrations
 {
     using DDD.Infra.Data.Context;
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<ContextDDD>
     {

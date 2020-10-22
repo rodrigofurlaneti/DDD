@@ -13,7 +13,7 @@ namespace DDD.MVC.AutoMapper
         {
             Mapper.CreateMap<ClientViewModel, Client>();
             Mapper.CreateMap<ProductViewModel, Product>();
-            Mapper.CreateMap<Client_ProductViewModel, Client_Product>();
+            Mapper.CreateMap<ClientProductViewModel, ClientProduct>();
         }
     }
 }

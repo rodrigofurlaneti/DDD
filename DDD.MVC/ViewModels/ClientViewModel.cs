@@ -23,6 +23,8 @@ namespace DDD.MVC.ViewModels
         
         [ScaffoldColumn(false)]
         public DateTime RegistrationDate { get; set; }
+        
+        [DisplayName("Ativo")]
         public bool Active { get; set; }
     }
 }

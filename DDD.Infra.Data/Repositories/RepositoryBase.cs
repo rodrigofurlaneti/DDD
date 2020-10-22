@@ -4,7 +4,6 @@ using System.Data.Entity;
 using System.Linq;
 using DDD.Domian.Interfaces;
 using DDD.Infra.Data.Context;
-using System.Data.SqlClient;
 namespace DDD.Infra.Data.Repositories
 {
     public class RepositoryBase<TEntity> : IDisposable, IRepositoryBase<TEntity> where TEntity : class

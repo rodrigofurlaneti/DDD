@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace DDD.Domian.Entities
 {
     public class Client
@@ -8,5 +10,6 @@ namespace DDD.Domian.Entities
         public string Email { get; set; }
         public DateTime RegistrationDate { get; set; }
         public bool Active { get; set; }
-    }
+        public virtual IEnumerable<Client> Clients { get; set; }
+}
 }

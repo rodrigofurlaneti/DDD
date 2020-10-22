@@ -1,0 +1,32 @@
+﻿@model DDD.MVC.ViewModels.ClientProductViewModel
+
+@{
+    ViewBag.Title = "Detalhar cliente produto";
+}
+<h2>Detalhar cliente produto</h2>
+<div>
+    <h4>Cliente produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clients.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Products.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ClientProductId }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

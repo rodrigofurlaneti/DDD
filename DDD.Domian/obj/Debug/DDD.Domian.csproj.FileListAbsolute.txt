@@ -1,6 +1,6 @@
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.Domian\bin\Debug\DDD.Domian.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.Domian\bin\Debug\DDD.Domian.pdb
-C:\Users\Administrador\source\repos\Solution.DDD\DDD.Domian\obj\Debug\DDD.Domian.csprojAssemblyReference.cache
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.Domian\obj\Debug\DDD.Domian.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.Domian\obj\Debug\DDD.Domian.dll
 C:\Users\Administrador\source\repos\Solution.DDD\DDD.Domian\obj\Debug\DDD.Domian.pdb
+C:\Users\Administrador\source\repos\Solution.DDD\DDD.Domian\obj\Debug\DDD.Domian.csprojAssemblyReference.cache
